@@ -38,19 +38,19 @@ class TicTacToe():
 			h_loc.append(hi_loc)
 			v_loc.append(vi_loc)
 		for item in h_loc:
-			if (self.ground[item[0][0]][item[0][1]]==self.ground[item[1][0]][item[1][1]]==self.ground[item[2][0]][item[2][1]] and self.ground[item[0][0]] != ' '):
+			if ((self.ground[item[0][0]][item[0][1]]==self.ground[item[1][0]][item[1][1]]==self.ground[item[2][0]][item[2][1]]) and self.ground[item[0][0]][item[0][1]]!=' '):
 				print('Got a match f h_loc')
 
 		for item in v_loc:
-			if (self.ground[item[0][0]][item[0][1]]==self.ground[item[1][0]][item[1][1]]==self.ground[item[2][0]][item[2][1]] and self.ground[item[0][0]] != ' '):
+			if ((self.ground[item[0][0]][item[0][1]]==self.ground[item[1][0]][item[1][1]]==self.ground[item[2][0]][item[2][1]]) and self.ground[item[0][0]][item[0][1]]!=' '):
 				print('Got a match f v_loc')
 					
 	def checkdiagonal(self):
 		diag1=[(0,0),(1,1),(2,2)]
 		diag2=[(0,2),(1,1),(2,0)]
-		if (self.ground[diag1[0][0]][diag1[0][1]]==self.ground[diag1[1][0]][diag1[1][1]]==self.ground[diag1[2][0]][diag1[2][1]] and self.ground[diag1[0][0]] != ' '):
+		if ((self.ground[diag1[0][0]][diag1[0][1]]==self.ground[diag1[1][0]][diag1[1][1]]==self.ground[diag1[2][0]][diag1[2][1]]) and self.ground[diag1[0][0]][diag1[0][1]]!=' '):
 			print('Got a match f d1')
-		elif (self.ground[diag2[0][0]][diag2[0][1]]==self.ground[diag2[1][0]][diag2[1][1]]==self.ground[diag2[2][0]][diag2[2][1]] and self.ground[diag2[0][0]] != ' '):
+		elif ((self.ground[diag2[0][0]][diag2[0][1]]==self.ground[diag2[1][0]][diag2[1][1]]==self.ground[diag2[2][0]][diag2[2][1]]) and self.ground[diag2[0][0]][diag2[0][1]]!=' '):
 			print('Got a match f d2')
 
 #checkstraight()
