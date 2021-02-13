@@ -1,7 +1,13 @@
 # Tic-Tac-Toe
 Welcome to my **Tic-Tac-Toe** project!
 First thanks for looking and spending time on my project.
+## For testing or playing the game
+  
+  Download all the files
+  
+  Run game.py file in your computer
 
+## For Developing the code
 Let's make things clear,
 This is not the best Tic-Tac-Toe python project in the internet.
 Also the code inside this project will not be a clean code or a optimized one.
