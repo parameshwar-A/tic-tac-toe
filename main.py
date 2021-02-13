@@ -1,10 +1,51 @@
 import itertools
+import time
 
 class TicTacToe():
 	def __init__(self):
 		self.ground=[[' ',' ',' '],[' ',' ',' '],[' ',' ',' ']]
 
-	def showgroun(self):
+	def locationhelper(self):
+		lochelp=[[1,2,3],[4,5,6],[7,8,9]]
+		for i in range(3):
+			for j in range(3):
+				if j==2:
+					print(lochelp[i][j])
+				else:
+					print(lochelp[i][j],end=' | ')
+			if i==2:
+				print()
+			else:
+				print('-'*9)
+
+	def exampleset(self):
+		sampleloc=[[" "," "," "],[" "," ","X"],[" "," "," "]]
+		for i in range(3):
+			for j in range(3):
+				if j==2:
+					print(sampleloc[i][j])
+				else:
+					print(sampleloc[i][j],end=' | ')
+			if i==2:
+				print()
+			else:
+				print('-'*9)		
+		time.sleep(1)
+		if int(input("What is the location value for the mark 'X': "))==6:
+			time.sleep(1)
+			print('\n'*3)
+			print('-'*25)
+			print('You got it right!!!')
+			print('-'*25)
+		else:
+			time.sleep(1)
+			print('\n'*3)
+			print('-'*25)
+			print("No the location is 6\n\nKindly compare with location helper and then start your game")
+			print('-'*25)
+			self.locationhelper()		
+				 
+	def showground(self):
 		for i in range(3):
 			for j in range(3):
 				if j==2:
